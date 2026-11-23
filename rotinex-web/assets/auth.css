@@ -1,0 +1,32 @@
+/* The "Entrar / Cadastrar" window (assets/auth.js). */
+.signup-button{cursor:pointer;opacity:1}
+.auth-dialog{border:0;padding:0;background:transparent;max-width:calc(100% - 32px);max-height:calc(100% - 32px);overflow:visible}
+.auth-dialog::backdrop{background:#1c123399;backdrop-filter:blur(3px)}
+.auth-card{position:relative;width:min(420px,calc(100vw - 32px));max-height:calc(100vh - 32px);overflow:auto;background:#fff;color:var(--ink);border-radius:16px;padding:30px 28px 22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 30px 80px #26133340;font-family:"DM Sans",sans-serif}
+.auth-card h2{font-size:34px;margin:2px 0 4px;text-align:center}
+.auth-logo{display:block;width:130px;height:40px;object-fit:contain;margin:0 auto}
+.auth-close{position:absolute;top:10px;right:12px;width:36px;height:36px;border:0;border-radius:50%;background:transparent;font-size:26px;line-height:1;color:var(--muted);cursor:pointer}
+.auth-close:hover{background:var(--lavender);color:var(--purple)}
+.auth-field{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600}
+.auth-field input{font:16px "DM Sans",sans-serif;padding:12px 14px;border:1px solid #cfc4dc;border-radius:8px;background:#fff;color:var(--ink)}
+.auth-field input:focus{outline:2px solid var(--purple);border-color:var(--purple)}
+.auth-check{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.45;cursor:pointer}
+.auth-check input{width:18px;height:18px;margin-top:1px;flex:none;accent-color:var(--purple)}
+.auth-note{margin:0;font-size:12px;line-height:1.5;color:var(--muted)}
+.auth-message{margin:0;padding:12px 14px;border-radius:8px;background:var(--lavender);font-size:14px;line-height:1.5}
+.auth-error{margin:0;min-height:1em;font-size:13px;color:#b3261e}
+.auth-error:empty{display:none}
+.auth-submit{width:100%;border:0;font-family:inherit;cursor:pointer}
+.auth-submit:disabled{opacity:.7;cursor:wait;transform:none}
+.auth-google{display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;border:1px solid #cfc4dc;border-radius:7px;background:#fff;font:700 14px "DM Sans",sans-serif;color:var(--ink);cursor:pointer}
+.auth-google:hover{background:#faf8fc;border-color:var(--purple)}
+.auth-google svg{width:20px;height:20px}
+.auth-or{display:flex;align-items:center;gap:12px;margin:2px 0;font-size:12px;color:var(--muted)}
+.auth-or:before,.auth-or:after{content:"";flex:1;height:1px;background:var(--line)}
+.auth-robot{min-height:65px;width:100%;display:flex;justify-content:center;overflow:hidden}.auth-robot>div{width:100%;display:flex;justify-content:center}
+.auth-links{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:0}
+.auth-links button{border:0;background:none;padding:6px 0;font:700 13px "DM Sans",sans-serif;color:var(--purple);cursor:pointer}
+.auth-links button:only-child{margin:auto}
+.auth-open{font-size:12px;text-align:center;color:var(--muted);text-decoration:underline}
+.auth-card button:focus-visible{outline:3px solid #a242ff;outline-offset:2px}
+.footer>a:not(.brand){font-size:12px}
